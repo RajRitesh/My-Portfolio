@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="icon" href="img/logo 2.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <div class="menu-icon" onclick="toggleNavMenu()">
+                    <div class="icon show" id="menuIcon" onclick="togglePlus()">&#9776;</div>
+                    <div class="icon" id="closeIcon"  onclick="toggleCross()">&#10005;</div>
+                </div>
+                <ul id="navMenu">
+                    <li><a onclick="removeBg()" href="#home">Home</a></li>
+                    <li><a onclick="removeBg()" href="#about">About</a></li>
+                    <li><a onclick="removeBg()" href="#services">Services</a></li>
+                    <li><a onclick="removeBg()" href="#portfolio">Works</a></li>
+                    <li><a onclick="removeBg()" href="#contact">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>  
+    </div>
+
+        <section id="home" class="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Ritesh Mehra</h1>
+                <h3>And I'm a <span class="text"></span></h3>
+                <p>I'm a Graphics Designer with extensive experience for over 5 years.
+                    <br>expertise is to create Posters, Logos, Brochure, etc.
+                </p>
+                <div class="home-sci">
+                    <a href="https://www.instagram.com/ritesh_mehra_41/" style="--i:8" target="_blank"><i class='bx bxl-instagram'></i></box-icon></a>
+                    <a href="https://www.linkedin.com/in/ritesh-kumar-39a471208/" style="--i:10" target="_blank"><i class='bx bxl-linkedin' ></i></box-icon></a>
+                    <a href="https://github.com/RajRitesh" style="--i:9" target="_blank"><i class='bx bxl-github'></i></box-icon></a>
+                    <a href="https://www.behance.net/riteshkumar99" style="--i:7" target="_blank"><i class='bx bxl-behance'></i></a>
+                </div>
+                <a href= "RESUME_RITESH.pdf" download target="_blank" class="btn-box">Download CV</a>
+              
+            </div>
+            <img class="my-img" src="img/my_img.png" alt="">
+        </section>
+    
+
+    <!--------------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/abt-img.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I am Ritesh. Currently a ECE Undergraduate at BIT Sindri. I am an Open Source and Research Enthusiast. My Aim To be a one-of-a-kind leader who can inspire others, 
+                        promote innovation and creativity, and develop leading technology. To do this, I constantly ask questions, challenge traditional thinking, imagine endless possibilities, 
+                        and never stop learning from the greats! I'm always ready to learn new things and take new challenges and turn possibilities into realities.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Designing :</span> Adobe Illustrator, Adobe Photoshop</li>
+                            <li><span>UI/UX Designing :</span> Figma, Adobe XD</li>
+                            <li><span>Web Development :</span> HTML, CSS, JavaScript, Bootstrap</li>
+                            <li><span>Programing Languages :</span> C++, Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>HR Intern</span><br>Signimus Technologies <i>(Service Based IT company)</i></li>
+                            <li><span>Graphics Lead Intern</span><br>Cerebro Kids <i>(Financial literacy company)</i></li>
+                            <li><span>Graphic Designer Intern</span><br>Milo Doctor <i>(Healthcare service provider company)</i></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Electronics & Communication Engineering</li>
+                            <li><span>Intermediate</span><br>Saraswati Shishu Vidya Mandir, Madhupur</li>
+                            <li><span>Matriculation</span><br>Saraswati Shishu Vidya Mandir, Madhupur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-code-alt'></i>
+                    <h2>Web Design</h2>
+                    <p>"Web Development Designing encompasses the process of creating and implementing visually appealing, functional, and responsive 
+                        websites through a combination of programming languages, frameworks, and design principles."
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bxs-crop'></i>
+                    <h2>UI/UX Design</h2>
+                    <p>"UI/UX Designing is the art of creating visually appealing and user-friendly digital experiences by carefully designing interfaces, 
+                        interactions, and workflows that seamlessly blend form and function."
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bxs-pen'></i>
+                    <h2>Graphic Design</h2>
+                    <p>"Graphics Designing is the art of visually communicating ideas, messages, and branding through the creative use of typography, 
+                        illustrations, images, and other visual elements, ensuring impactful and visually captivating designs."
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------Portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/img1.png" alt="img1">
+                    <div class="layer">
+                        <h3>Finance</h3>
+                        <p> This finance poster serves as a comprehensive guide, empowering individuals to make informed decisions.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/img2.jpg" alt="img2">
+                    <div class="layer">
+                        <h3>Products</h3>
+                        <p> This product poster showcases the innovative features and benefits of the product.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/img3.jpg" alt="img3">
+                    <div class="layer">
+                        <h3>Healthcare</h3>
+                        <p>Healthcare poster educates and empowers individuals to take control of their well-being."</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------------Contact--------------- -->
+    <div id="contact" class="contact">
+        <div id="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bxl-telegram'></i>riteshkumarmehra41@gmail.com</p>
+                    <p><i class='bx bxs-phone-call'></i>8709902075</p>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/ritesh_mehra_41/" target="_blank"><i class='bx bxl-instagram'></i></box-icon></a>
+                        <a href="https://www.linkedin.com/in/ritesh-kumar-39a471208/" target="_blank"><i class='bx bxl-linkedin' ></i></box-icon></a>
+                        <a href="https://github.com/RajRitesh"  target="_blank"><i class='bx bxl-github'></i></box-icon></a>
+                        <a href="https://www.behance.net/riteshkumar99"  target="_blank"><i class='bx bxl-behance'></i></a>
+                    </div>
+                    <a href="RESUME_RITESH.pdf" download class="btn btn2" target="_blank">Download CV</a>
+                </div>
+                <!-- </div> -->
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ritesh. Made with by <i class='bx bxs-heart' class="heart"></i> Ritesh Mehra</p>
+    </div>
+
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>
